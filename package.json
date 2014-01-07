@@ -1,0 +1,22 @@
+{
+  "name": "categorize-files",
+  "version": "0.0.0",
+  "description": "Categorize given files by extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "prova"
+  },
+  "devDependencies": {
+    "prova": "*"
+  },
+  "keywords": [
+    "files",
+    "extensions"
+  ],
+  "repository": {
+    "url": "git@github.com:azer\/categorize-files.git",
+    "type": "git"
+  },
+  "author": "Azer Ko\u00e7ulu <azer@kodfabrik.com>",
+  "license": "BSD"
+}
