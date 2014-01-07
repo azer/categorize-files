@@ -1,9 +1,9 @@
 module.exports = categorize;
 
-function categorize (files) {
+function categorize (files, struct) {
   var i = -1;
   var len = files.length;
-  var result = {};
+  var result = struct || {};
   var ext;
 
   while (++i < len) {
@@ -12,6 +12,10 @@ function categorize (files) {
     ext = files[i].replace(/.*\./, '');
 
     if (!ext) continue;
+
+    if (struct && !struct[ext]) {
+      ext = 'other';
+    }
 
     if (result[ext]) {
       result[ext].push(files[i]);
